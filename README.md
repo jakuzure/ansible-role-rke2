@@ -108,6 +108,9 @@ rke2_artifact_url: https://github.com/rancher/rke2/releases/download/
 # Local path to store artifacts
 rke2_artifact_path: /rke2/artifact
 
+# Timeout for the artifacts download, increase if you are behind a slower connection or mirror
+rke2_download_timeout: 30
+
 # Airgap required artifacts
 rke2_artifact:
   - sha256sum-{{ rke2_architecture }}.txt
